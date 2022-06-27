@@ -1,14 +1,12 @@
 .benefits {
   padding-top: 94px;
   padding-bottom: 0px;
-}
-
-.benefits__list {
-  display: flex;
-}
-
-.benefits__item {
-  min-width: 271px;
+  &__list {
+    display: flex;
+  }
+  &__item {
+    min-width: 271px;
+  }
 }
 
 .benefits__item:not(:last-child) {
@@ -36,6 +34,7 @@
   color: var(--primary-tex-color);
   margin-bottom: 10px;
 }
+
 .benefits__text {
   line-height: 1.71;
   color: var(--secondary-tex-color);
