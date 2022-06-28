@@ -93,10 +93,9 @@
   transition-duration: 250ms;
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
-  background-color: var(--accent-color);
-  color: var(--first-fon-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--first-fon-color);
+  }
 }

@@ -143,6 +143,9 @@ img {
   color: var(--accent-color);
 }
 
+.current {
+  color: var(--accent-color);
+}
 .current:after {
   content: " ";
   position: absolute;
@@ -415,9 +418,7 @@ img {
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc-link:hover, .footer-soc-link:focus {
   background-color: var(--accent-color);
   color: var(--first-fon-color);
 }
@@ -452,9 +453,7 @@ img {
   transition-property: border-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.online-input:hover,
-.online-input:focus {
+.online-input:hover, .online-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -480,7 +479,9 @@ img {
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.online-button:hover, .online-button:focus {
+  background-color: var(--secondary-accent-color);
+}
 .online-button::after {
   content: "";
   display: block;
@@ -488,11 +489,6 @@ img {
   height: 24px;
   background-image: url(../images/icon\ send.svg);
   margin-left: 10px;
-}
-
-.online-button:hover,
-.online-button:focus {
-  background-color: var(--secondary-accent-color);
 }
 
 .backdrop {
@@ -535,9 +531,7 @@ img {
   transition-property: box-shadow, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:focus {
+.modal-close-btn:hover, .modal-close-btn:focus {
   fill: var(--accent-color);
   background-color: var(--first-fon-color);
 }
@@ -582,9 +576,7 @@ img {
   transition-property: border-color, fill;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-input:hover,
-.modal-input:focus {
+.modal-input:hover, .modal-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -615,9 +607,7 @@ img {
   transition: border-color 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-text:hover,
-.modal-text:focus {
+.modal-text:hover, .modal-text:focus {
   border-color: var(--accent-color);
 }
 
@@ -631,6 +621,10 @@ img {
   margin-bottom: 30px;
 }
 
+.check-text:hover + .check-text::before {
+  border-color: var(--accent-color);
+}
+
 .check-text::before {
   content: "";
   width: 16px;
@@ -639,10 +633,6 @@ img {
   border-radius: 3px;
   margin-right: 8.38px;
   cursor: pointer;
-}
-
-.check-text:hover + .check-text::before {
-  border-color: var(--accent-color);
 }
 
 .modal-check:checked + .check-text::before {
@@ -699,7 +689,7 @@ img {
   margin-right: 8px;
 }
 
-.btn {
+.filter-btn {
   padding: 6px 22px;
   background-color: var(--second-fon-color);
   font-family: inherit;
@@ -713,15 +703,10 @@ img {
   border-radius: 4px;
   cursor: pointer;
   letter-spacing: 0.03em;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition-property: background-color, box-shadow;
-  transition-duration: 250ms, 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1), cubic-bezier(0.4, 0, 0.2, 1);
-  transition-delay: 0s, 0s;
+  transition: background-color, box-shadow, 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.btn:hover,
-.btn:focus {
+.filter-btn:hover, .filter-btn:focus {
   color: var(--first-fon-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -748,9 +733,7 @@ img {
   transition-property: color, background-color, box-shadow;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.projects-link:hover,
-.projects-link:focus {
+.projects-link:hover, .projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -838,7 +821,6 @@ img {
   display: flex;
   justify-content: center;
 }
-
 .team__soc__item {
   width: 44px;
   height: 44px;
@@ -862,9 +844,7 @@ img {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color;
 }
-
-.team__link:hover,
-.team__link:focus {
+.team__link:hover, .team__link:focus {
   color: var(--first-fon-color);
   background-color: var(--accent-color);
 }

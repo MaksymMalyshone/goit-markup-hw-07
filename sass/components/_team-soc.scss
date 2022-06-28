@@ -1,13 +1,12 @@
 .team__soc {
   display: flex;
   justify-content: center;
-}
-
-.team__soc__item {
-  width: 44px;
-  height: 44px;
-  margin-right: 10px;
-  border-radius: 50%;
+  &__item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+  }
 }
 
 .team__soc__item:last-child {
@@ -25,12 +24,11 @@
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-property: color, background-color;
-}
-
-.team__link:hover,
-.team__link:focus {
-  color: var(--first-fon-color);
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--first-fon-color);
+    background-color: var(--accent-color);
+  }
 }
 
 .team__icon {

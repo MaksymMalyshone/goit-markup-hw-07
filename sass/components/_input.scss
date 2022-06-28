@@ -25,11 +25,10 @@
   transition-duration: 250ms;
   transition-property: border-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.online-input:hover,
-.online-input:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .online-button {
@@ -53,18 +52,16 @@
   transition-duration: 250ms;
   transition-property: color, background-color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.online-button::after {
-  content: '';
-  display: block;
-  width: 24px;
-  height: 24px;
-  background-image: url(../images/icon\ send.svg);
-  margin-left: 10px;
-}
-
-.online-button:hover,
-.online-button:focus {
-  background-color: var(--secondary-accent-color);
+  &:hover,
+  &:focus {
+    background-color: var(--secondary-accent-color);
+  }
+  &::after {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/icon\ send.svg);
+    margin-left: 10px;
+  }
 }

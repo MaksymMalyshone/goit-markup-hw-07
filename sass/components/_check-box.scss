@@ -8,6 +8,10 @@
   margin-bottom: 30px;
 }
 
+.check-text:hover + .check-text::before {
+  border-color: var(--accent-color);
+}
+
 .check-text::before {
   content: '';
   width: 16px;
@@ -16,10 +20,6 @@
   border-radius: 3px;
   margin-right: 8.38px;
   cursor: pointer;
-}
-
-.check-text:hover + .check-text::before {
-  border-color: var(--accent-color);
 }
 
 .modal-check:checked + .check-text::before {
